@@ -76,18 +76,13 @@ function Page({ id }) {
       });
       setFluidColor('#d7d7d4');
     };
-  }, [currentProject]);
+  }, [currentProject, setFluidColor]);
 
   const seo = useMemo(
     () => ({
       title: `FINBIZ - ${currentProject.title} Initiative`,
       description: `Learn about the ${currentProject.title} initiative organised by THE FINBIZ CLUB at Adani University, in collaboration with ${currentProject.company}.`,
-      keywords: [
-        `${currentProject.title} initiative`,
-        `${currentProject.title} ${currentProject.company}`,
-        `FINBIZ ${currentProject.title}`,
-        `Adani University ${currentProject.title}`,
-      ],
+      keywords: [`${currentProject.title} initiative`, `${currentProject.title} ${currentProject.company}`, `FINBIZ ${currentProject.title}`, `Adani University ${currentProject.title}`],
     }),
     [currentProject],
   );

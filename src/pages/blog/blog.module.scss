@@ -96,7 +96,9 @@
   background: rgba(255, 255, 255, 0.94);
   border: 1px solid rgba(40, 40, 43, 0.1);
   box-shadow: 0 22px 44px rgba(40, 40, 43, 0.07);
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 
   @include hover {
     &:hover {

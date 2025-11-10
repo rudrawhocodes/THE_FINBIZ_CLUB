@@ -136,7 +136,9 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
   @include hover {
     &:hover {

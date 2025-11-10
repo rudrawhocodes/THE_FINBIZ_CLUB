@@ -40,7 +40,9 @@
   border-radius: calc(var(--layout-columns-gap) * 0.75);
   box-shadow: 0 0 0 calc(var(--layout-columns-gap) * 0.75) var(--white);
   border: 1px solid rgba(40, 40, 43, 0.08);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 
   @include hover {
     &:hover {

@@ -41,7 +41,9 @@ function Background() {
       uOffsetX: { value: 0.34 },
       uOffsetY: { value: 0.0 },
       uLinesAmount: { value: 5.0 },
-      uPlaneRes: { value: new THREE.Vector2(windowSize.width, windowSize.height) },
+      uPlaneRes: {
+        value: new THREE.Vector2(windowSize.width, windowSize.height),
+      },
       uMouse2D: { value: new THREE.Vector2(1.0, 1.0) },
       uBackgroundScale: { value: 3.0 },
     }),

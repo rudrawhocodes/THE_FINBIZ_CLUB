@@ -1,5 +1,5 @@
 import { PerspectiveCamera, useTexture } from '@react-three/drei';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import { Physics } from '@react-three/rapier';
 import Sticker from '@src/components/dom/prefooter/Sticker';
@@ -30,34 +30,38 @@ function Lighting() {
 
 function useFruitSpawner(viewport, textures, slicedTextures, isMobile) {
   const [fruits, setFruits] = useState([]);
+  const viewportWidth = viewport.width;
 
-  const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+  const getRandomNumber = useCallback((min, max) => Math.floor(Math.random() * (max - min + 1)) + min, []);
 
-  const spawnFruitInterval = (interval = 1.5) => {
-    const intervalTimer = setInterval(() => {
-      const width = viewport.width / 2 - 1;
+  const spawnFruitInterval = useCallback(
+    (interval = 1.5) => {
+      const intervalTimer = setInterval(() => {
+        const width = viewportWidth / 2 - 1;
 
-      setFruits((prevFruits) => {
-        const newFruits = Array.from({ length: getRandomNumber(1, 6) }, (_, i) => {
-          const randomX = getRandomNumber(width * -1, width);
-          const randomImage = getRandomNumber(0, textures.length - 1);
+        setFruits((prevFruits) => {
+          const newFruits = Array.from({ length: getRandomNumber(1, 6) }, (_, i) => {
+            const randomX = getRandomNumber(width * -1, width);
+            const randomImage = getRandomNumber(0, textures.length - 1);
 
-          return <Sticker key={`${Date.now()}-${i}`} positionX={randomX} image={textures[randomImage]} imageSliced={slicedTextures[randomImage]} />;
+            return <Sticker key={`${Date.now()}-${i}`} positionX={randomX} image={textures[randomImage]} imageSliced={slicedTextures[randomImage]} />;
+          });
+
+          return [...prevFruits, ...newFruits];
         });
+      }, interval * 1000);
 
-        return [...prevFruits, ...newFruits];
-      });
-    }, interval * 1000);
-
-    return intervalTimer;
-  };
+      return intervalTimer;
+    },
+    [getRandomNumber, slicedTextures, textures, viewportWidth],
+  );
 
   useEffect(() => {
     const spawnInterval = spawnFruitInterval(isMobile ? 5 : 3);
     return () => {
       clearInterval(spawnInterval);
     };
-  }, [isMobile]);
+  }, [isMobile, spawnFruitInterval]);
 
   return fruits;
 }

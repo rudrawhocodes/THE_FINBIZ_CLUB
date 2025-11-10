@@ -174,12 +174,8 @@
           border-top-right-radius: var(--layout-columns-gap) !important;
 
           @include mobile {
-            border-top-left-radius: calc(
-              var(--layout-columns-gap) * 0.5
-            ) !important;
-            border-top-right-radius: calc(
-              var(--layout-columns-gap) * 0.5
-            ) !important;
+            border-top-left-radius: calc(var(--layout-columns-gap) * 0.5) !important;
+            border-top-right-radius: calc(var(--layout-columns-gap) * 0.5) !important;
           }
         }
 
@@ -188,12 +184,8 @@
           border-bottom-right-radius: var(--layout-columns-gap) !important;
 
           @include mobile {
-            border-bottom-left-radius: calc(
-              var(--layout-columns-gap) * 0.5
-            ) !important;
-            border-bottom-right-radius: calc(
-              var(--layout-columns-gap) * 0.5
-            ) !important;
+            border-bottom-left-radius: calc(var(--layout-columns-gap) * 0.5) !important;
+            border-bottom-right-radius: calc(var(--layout-columns-gap) * 0.5) !important;
           }
         }
       }

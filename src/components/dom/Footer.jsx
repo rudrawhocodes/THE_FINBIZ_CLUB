@@ -16,7 +16,9 @@ import { useStore } from '@src/store';
 import { useWindowSize } from '@darkroom.engineering/hamo';
 
 const Time = dynamic(() => import('@src/components/dom/Time'), { ssr: false });
-const GoTop = dynamic(() => import('@src/components/dom/GoTop'), { ssr: false });
+const GoTop = dynamic(() => import('@src/components/dom/GoTop'), {
+  ssr: false,
+});
 
 function Footer() {
   const isMobile = useIsMobile();
@@ -49,7 +51,10 @@ function Footer() {
               scroller: document?.querySelector('main'),
             });
           } else {
-            gsap.set(footerRef.current, { transform: 'translate(0%, 0%)', height: 'auto' });
+            gsap.set(footerRef.current, {
+              transform: 'translate(0%, 0%)',
+              height: 'auto',
+            });
           }
         }
       };
@@ -123,7 +128,13 @@ function Footer() {
           <div className={clsx('p-x', styles.middleText)}>Open for members, events and collaboration</div>
         </AppearTitle>
       </div>
-      <div className={styles.middleContainer} style={{ gridColumn: '13 / 17', textAlign: isMobile ? 'left' : 'right' }}>
+      <div
+        className={styles.middleContainer}
+        style={{
+          gridColumn: '13 / 17',
+          textAlign: isMobile ? 'left' : 'right',
+        }}
+      >
         <AppearTitle isFooter>
           <div className="p-x">© 2025 · THE FINBIZ CLUB</div>
           <div className={clsx('p-x', styles.middleText)}>All Rights Reserved</div>

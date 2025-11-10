@@ -17,7 +17,10 @@ const PARTNER_BADGES = {
 };
 
 function Badge({ name }) {
-  const partner = PARTNER_BADGES[name] || { name: 'Partner', tagline: 'Collaboration' };
+  const partner = PARTNER_BADGES[name] || {
+    name: 'Partner',
+    tagline: 'Collaboration',
+  };
 
   return (
     <div className={clsx(styles.badge, styles[`badge${name}`])}>

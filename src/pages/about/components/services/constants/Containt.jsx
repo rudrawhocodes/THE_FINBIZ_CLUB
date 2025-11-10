@@ -14,11 +14,26 @@ const containt = [
       <div className="p-l">Each track mixes fundamentals with labs so knowledge sticks.</div>,
     ],
     options: [
-      { title: 'Equity Research Labs', desc: 'Break down listed companies, model valuations, and publish club research decks.' },
-      { title: 'Fintech Foundations', desc: 'Decode digital banking, payments, blockchain, and regulation with practitioner case studies.' },
-      { title: 'Entrepreneurship Studio', desc: 'Prototype venture ideas, validate business models, and pitch to investor mentors.' },
-      { title: 'Analytics Bootcamp', desc: 'Work with financial datasets in Python, Excel, and BI tools to tell compelling stories.' },
-      { title: 'Consulting Sprints', desc: 'Solve growth challenges for campus ventures and partner startups with structured frameworks.' },
+      {
+        title: 'Equity Research Labs',
+        desc: 'Break down listed companies, model valuations, and publish club research decks.',
+      },
+      {
+        title: 'Fintech Foundations',
+        desc: 'Decode digital banking, payments, blockchain, and regulation with practitioner case studies.',
+      },
+      {
+        title: 'Entrepreneurship Studio',
+        desc: 'Prototype venture ideas, validate business models, and pitch to investor mentors.',
+      },
+      {
+        title: 'Analytics Bootcamp',
+        desc: 'Work with financial datasets in Python, Excel, and BI tools to tell compelling stories.',
+      },
+      {
+        title: 'Consulting Sprints',
+        desc: 'Solve growth challenges for campus ventures and partner startups with structured frameworks.',
+      },
     ],
   },
   {
@@ -35,11 +50,26 @@ const containt = [
       <div className="p-l">Each experience builds confidence, networks, and momentum.</div>,
     ],
     options: [
-      { title: 'Leadership Summit', desc: 'Annual flagship conference featuring CXOs, fintech founders, and policy leaders.' },
-      { title: 'Trading League', desc: 'Inter-college mock trading challenge with live market dashboards and analytics rooms.' },
-      { title: 'Case Crackathons', desc: 'Team-based problem solving on strategy, growth, and financial inclusion themes.' },
-      { title: 'Fireside Hours', desc: 'Intimate community sessions with alumni operators and venture capitalists.' },
-      { title: 'Industry Treks', desc: 'Curated visits to exchanges, incubators, and fintech labs across India.' },
+      {
+        title: 'Leadership Summit',
+        desc: 'Annual flagship conference featuring CXOs, fintech founders, and policy leaders.',
+      },
+      {
+        title: 'Trading League',
+        desc: 'Inter-college mock trading challenge with live market dashboards and analytics rooms.',
+      },
+      {
+        title: 'Case Crackathons',
+        desc: 'Team-based problem solving on strategy, growth, and financial inclusion themes.',
+      },
+      {
+        title: 'Fireside Hours',
+        desc: 'Intimate community sessions with alumni operators and venture capitalists.',
+      },
+      {
+        title: 'Industry Treks',
+        desc: 'Curated visits to exchanges, incubators, and fintech labs across India.',
+      },
     ],
   },
   {
@@ -56,11 +86,26 @@ const containt = [
       <div className="p-l">Every member receives a personalised growth plan.</div>,
     ],
     options: [
-      { title: 'Mentor Network', desc: 'Pair with alumni and industry experts for fortnightly goal-setting sessions.' },
-      { title: 'Resource Library', desc: 'Curated decks, reading lists, and recorded masterclasses for self-paced learning.' },
-      { title: 'Career Readiness Labs', desc: 'Resume studios, interview drills, and role-specific prep for internships and placements.' },
-      { title: 'Startup Clinic', desc: 'Office hours to refine ideas, financial models, GTM plans, and pitch decks.' },
-      { title: 'Peer Pods', desc: 'Accountability groups that track progress on learning goals and collaborate on challenges.' },
+      {
+        title: 'Mentor Network',
+        desc: 'Pair with alumni and industry experts for fortnightly goal-setting sessions.',
+      },
+      {
+        title: 'Resource Library',
+        desc: 'Curated decks, reading lists, and recorded masterclasses for self-paced learning.',
+      },
+      {
+        title: 'Career Readiness Labs',
+        desc: 'Resume studios, interview drills, and role-specific prep for internships and placements.',
+      },
+      {
+        title: 'Startup Clinic',
+        desc: 'Office hours to refine ideas, financial models, GTM plans, and pitch decks.',
+      },
+      {
+        title: 'Peer Pods',
+        desc: 'Accountability groups that track progress on learning goals and collaborate on challenges.',
+      },
     ],
   },
 ];

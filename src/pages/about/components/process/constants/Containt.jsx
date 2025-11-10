@@ -15,13 +15,34 @@ const containt = [
       <div className="p-l">Our rhythm keeps events student-led yet professionally delivered.</div>,
     ],
     options: [
-      { title: 'Discovery', desc: 'Understand community needs and define the learning or impact goal.' },
-      { title: 'Team Formation', desc: 'Assemble cross-functional student squads with defined roles.' },
-      { title: 'Blueprinting', desc: 'Structure the agenda, resources, and success metrics for the initiative.' },
-      { title: 'Mentor Alignment', desc: 'Loop in faculty and industry mentors to stress-test the plan.' },
-      { title: 'Execution Sprint', desc: 'Run rehearsals, marketing pushes, and logistics drills ahead of launch.' },
-      { title: 'Showcase', desc: 'Deliver the initiative with live facilitation, feedback loops, and documentation.' },
-      { title: 'Retrospective', desc: 'Capture learnings, participant feedback, and actions for the next cohort.' },
+      {
+        title: 'Discovery',
+        desc: 'Understand community needs and define the learning or impact goal.',
+      },
+      {
+        title: 'Team Formation',
+        desc: 'Assemble cross-functional student squads with defined roles.',
+      },
+      {
+        title: 'Blueprinting',
+        desc: 'Structure the agenda, resources, and success metrics for the initiative.',
+      },
+      {
+        title: 'Mentor Alignment',
+        desc: 'Loop in faculty and industry mentors to stress-test the plan.',
+      },
+      {
+        title: 'Execution Sprint',
+        desc: 'Run rehearsals, marketing pushes, and logistics drills ahead of launch.',
+      },
+      {
+        title: 'Showcase',
+        desc: 'Deliver the initiative with live facilitation, feedback loops, and documentation.',
+      },
+      {
+        title: 'Retrospective',
+        desc: 'Capture learnings, participant feedback, and actions for the next cohort.',
+      },
     ],
   },
   {
@@ -38,15 +59,42 @@ const containt = [
       <div className="p-l">The outcome is consistent delivery and continuous improvement.</div>,
     ],
     options: [
-      { title: 'Kickoff Canvas', desc: 'Begin with a shared canvas capturing vision, stakeholders, and outcomes.' },
-      { title: 'Research Pods', desc: 'Split into pods that validate assumptions and gather expert insights.' },
-      { title: 'Design Reviews', desc: 'Review agendas, collateral, and participant journeys with leadership council.' },
-      { title: 'Ops & Partnerships', desc: 'Coordinate venues, partners, sponsors, and communication touchpoints.' },
-      { title: 'Budget Stewardship', desc: 'Track spends, sponsorship inflows, and ROI metrics responsibly.' },
-      { title: 'Comms Playbook', desc: 'Deploy multi-channel outreach—mailers, campus activations, and social media.' },
-      { title: 'On-ground Control', desc: 'Run day-of command centres covering registrations, speaker flow, and tech.' },
-      { title: 'Impact Reporting', desc: 'Produce concise reports capturing reach, learning, and community feedback.' },
-      { title: 'Knowledge Archive', desc: 'Archive templates, recordings, and checklists for the next leadership batch.' },
+      {
+        title: 'Kickoff Canvas',
+        desc: 'Begin with a shared canvas capturing vision, stakeholders, and outcomes.',
+      },
+      {
+        title: 'Research Pods',
+        desc: 'Split into pods that validate assumptions and gather expert insights.',
+      },
+      {
+        title: 'Design Reviews',
+        desc: 'Review agendas, collateral, and participant journeys with leadership council.',
+      },
+      {
+        title: 'Ops & Partnerships',
+        desc: 'Coordinate venues, partners, sponsors, and communication touchpoints.',
+      },
+      {
+        title: 'Budget Stewardship',
+        desc: 'Track spends, sponsorship inflows, and ROI metrics responsibly.',
+      },
+      {
+        title: 'Comms Playbook',
+        desc: 'Deploy multi-channel outreach—mailers, campus activations, and social media.',
+      },
+      {
+        title: 'On-ground Control',
+        desc: 'Run day-of command centres covering registrations, speaker flow, and tech.',
+      },
+      {
+        title: 'Impact Reporting',
+        desc: 'Produce concise reports capturing reach, learning, and community feedback.',
+      },
+      {
+        title: 'Knowledge Archive',
+        desc: 'Archive templates, recordings, and checklists for the next leadership batch.',
+      },
     ],
   },
 ];

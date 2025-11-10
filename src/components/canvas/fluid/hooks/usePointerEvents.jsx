@@ -9,7 +9,6 @@ const usePointerEvents = (mainRef, size, force) => {
 
   useEffect(() => {
     if (!mainRef.current) {
-      console.error('Main reference is not initialized');
       return undefined;
     }
 
@@ -40,7 +39,9 @@ const usePointerEvents = (mainRef, size, force) => {
       });
     };
 
-    element.addEventListener('pointermove', handlePointerMove, { passive: true });
+    element.addEventListener('pointermove', handlePointerMove, {
+      passive: true,
+    });
 
     return () => {
       element.removeEventListener('pointermove', handlePointerMove);

@@ -24,7 +24,12 @@ function ProjectImages({ project }) {
       }
       if (tag === 'small') {
         return (
-          <div style={{ gridColumn: !isMobile ? (!isRight ? '1 / 9' : ' 9 / 17') : !isRight ? '1 / 4' : ' 4 / 7' }} className={styles.imageContainer}>
+          <div
+            style={{
+              gridColumn: !isMobile ? (!isRight ? '1 / 9' : ' 9 / 17') : !isRight ? '1 / 4' : ' 4 / 7',
+            }}
+            className={styles.imageContainer}
+          >
             <Image priority sizes="100%" src={src} fill alt={`Image-${title}-${index}`} />
           </div>
         );

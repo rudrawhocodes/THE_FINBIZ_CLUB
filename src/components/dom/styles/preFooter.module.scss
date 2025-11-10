@@ -42,8 +42,8 @@
 .canvasBackdrop {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(65, 160, 133, 0.25), transparent 60%),
-    radial-gradient(circle at 80% 30%, rgba(40, 40, 43, 0.15), transparent 55%),
+  background:
+    radial-gradient(circle at 20% 20%, rgba(65, 160, 133, 0.25), transparent 60%), radial-gradient(circle at 80% 30%, rgba(40, 40, 43, 0.15), transparent 55%),
     linear-gradient(135deg, rgba(65, 160, 133, 0.12) 0%, rgba(240, 244, 241, 0.85) 45%, rgba(255, 255, 255, 0.95) 100%);
   filter: saturate(110%);
 }

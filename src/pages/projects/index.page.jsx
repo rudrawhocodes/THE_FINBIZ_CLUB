@@ -15,7 +15,7 @@ function Page() {
     router.replace('/blog');
   }, [router]);
 
-  return <CustomHead {...seo} />;
+  return <CustomHead title={seo.title} description={seo.description} />;
 }
 
 export const getServerSideProps = () => ({

@@ -8,18 +8,8 @@ import CustomHead from '@src/components/dom/CustomHead';
 
 const seo = {
   title: 'FINBIZ - Adani University Business & Fintech Club',
-  description:
-    'THE FINBIZ CLUB at Adani University — a student-run business and fintech club focused on entrepreneurship, finance, and technology. Join us for events, workshops and networking.',
-  keywords: [
-    'FINBIZ',
-    'Adani University',
-    'Business Club',
-    'Fintech',
-    'Student Club',
-    'Entrepreneurship',
-    'Workshops',
-    'Events',
-  ],
+  description: 'THE FINBIZ CLUB at Adani University — a student-run business and fintech club focused on entrepreneurship, finance, and technology. Join us for events, workshops and networking.',
+  keywords: ['FINBIZ', 'Adani University', 'Business Club', 'Fintech', 'Student Club', 'Entrepreneurship', 'Workshops', 'Events'],
 };
 
 function Page() {

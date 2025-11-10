@@ -61,7 +61,15 @@ export default function FloatRigidBody({ totalCount, transparentCount }) {
       }
     }
 
-    return { factors, xFactors, yFactors, zFactors, normalInstances, transparentInstances, colors };
+    return {
+      factors,
+      xFactors,
+      yFactors,
+      zFactors,
+      normalInstances,
+      transparentInstances,
+      colors,
+    };
   }, [isMobile, normalCount, totalCount]);
 
   useEffect(() => {
