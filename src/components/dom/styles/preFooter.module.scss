@@ -1,0 +1,49 @@
+@import '@src/styles/functions';
+
+.root {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  background-color: var(--white);
+  padding: 0;
+  margin: 0;
+  .textsContainer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: calc(varmake(--layout-columns-gap) * 4);
+    z-index: 2;
+    color: var(--black);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      color: var(--black);
+    }
+  }
+  .canvas {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+
+.canvasBackdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(65, 160, 133, 0.25), transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(40, 40, 43, 0.15), transparent 55%),
+    linear-gradient(135deg, rgba(65, 160, 133, 0.12) 0%, rgba(240, 244, 241, 0.85) 45%, rgba(255, 255, 255, 0.95) 100%);
+  filter: saturate(110%);
+}

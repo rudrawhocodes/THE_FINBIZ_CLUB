@@ -1,0 +1,102 @@
+@import '@src/styles/functions';
+
+.titleContainer {
+  padding-bottom: calc(var(--layout-columns-gap) * 2);
+  background-color: var(--white);
+
+  .title {
+    grid-column: 1 / 17;
+    @include mobile {
+      grid-column: 1 / 7;
+    }
+  }
+}
+
+.root {
+  background-color: var(--white);
+  padding-bottom: calc(var(--layout-columns-gap) * 4);
+}
+
+.grid {
+  grid-column: 1 / 17;
+  display: grid;
+  gap: calc(var(--layout-columns-gap) * 2);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  @include mobile {
+    grid-column: 1 / 7;
+    grid-template-columns: 1fr;
+    gap: calc(var(--layout-columns-gap) * 1.5);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--layout-columns-gap) * 1);
+  position: relative;
+  padding: calc(var(--layout-columns-gap) * 2);
+  background-color: var(--white);
+  border-radius: calc(var(--layout-columns-gap) * 0.75);
+  box-shadow: 0 0 0 calc(var(--layout-columns-gap) * 0.75) var(--white);
+  border: 1px solid rgba(40, 40, 43, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+  @include hover {
+    &:hover {
+      transform: translateY(calc(var(--layout-columns-gap) * -0.5));
+      box-shadow: 0 20px 50px rgba(40, 40, 43, 0.08);
+    }
+  }
+
+  @include mobile {
+    padding: calc(var(--layout-columns-gap) * 1.5);
+    border-radius: calc(var(--layout-columns-gap) * 0.5);
+    box-shadow: 0 0 0 calc(var(--layout-columns-gap) * 0.5) var(--white);
+  }
+
+  h3 {
+    max-width: columns(4.2);
+  }
+
+  p {
+    max-width: columns(4.5);
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 65%;
+  border-radius: calc(var(--layout-columns-gap) * 0.5);
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.meta {
+  display: flex;
+  gap: calc(var(--layout-columns-gap) * 0.5);
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.readingTime {
+  color: rgba(40, 40, 43, 0.7);
+}
+
+.buttonContainer {
+  margin-top: calc(var(--layout-columns-gap) * 3);
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 1 / 17;
+
+  @include mobile {
+    justify-content: flex-start;
+    grid-column: 1 / 7;
+  }
+}

@@ -1,0 +1,155 @@
+@import '@src/styles/functions';
+
+.root {
+  background-color: var(--white);
+  padding: calc(var(--layout-columns-gap) * 4) 0 calc(var(--layout-columns-gap) * 6);
+}
+
+.layout {
+  grid-column: 1 / 17;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: calc(var(--layout-columns-gap) * 1.5);
+  row-gap: calc(var(--layout-columns-gap) * 3);
+  align-items: start;
+
+  @include mobile {
+    grid-column: 1 / 7;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: var(--layout-columns-gap);
+  }
+}
+
+.hero {
+  grid-column: 2 / 7;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--layout-columns-gap) * 1.5);
+  padding-right: calc(var(--layout-columns-gap) * 2);
+
+  @include mobile {
+    grid-column: 1 / 7;
+    padding-right: 0;
+  }
+
+  span {
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  p {
+    max-width: columns(9);
+    line-height: 1.6;
+
+    @include mobile {
+      max-width: none;
+    }
+  }
+}
+
+.heroHighlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: calc(var(--layout-columns-gap));
+
+  li {
+    position: relative;
+    padding-left: calc(var(--layout-columns-gap) * 1.6);
+    line-height: 1.6;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+      width: 0.45rem;
+      height: 0.45rem;
+      border-radius: 50%;
+      background: var(--accentColor);
+    }
+  }
+}
+
+.cardList {
+  grid-column: 7 / 17;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(var(--layout-columns-gap) * 2);
+
+  @include mobile {
+    grid-column: 1 / 7;
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--layout-columns-gap) * 1.2);
+  height: 100%;
+  padding: calc(var(--layout-columns-gap) * 2);
+  border-radius: calc(var(--layout-columns-gap) * 0.75);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(40, 40, 43, 0.1);
+  box-shadow: 0 22px 44px rgba(40, 40, 43, 0.07);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+
+  @include hover {
+    &:hover {
+      transform: translateY(calc(var(--layout-columns-gap) * -0.4));
+      box-shadow: 0 32px 56px rgba(40, 40, 43, 0.12);
+    }
+  }
+
+  @include mobile {
+    padding: calc(var(--layout-columns-gap) * 1.6);
+    border-radius: calc(var(--layout-columns-gap) * 0.6);
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 58%;
+  border-radius: calc(var(--layout-columns-gap) * 0.6);
+  overflow: hidden;
+  background: rgba(40, 40, 43, 0.06);
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.meta {
+  display: flex;
+  gap: calc(var(--layout-columns-gap) * 0.75);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--layout-columns-gap) * 0.8);
+
+  h3 {
+    max-width: columns(6.5);
+  }
+
+  p {
+    max-width: columns(6.5);
+    line-height: 1.6;
+  }
+}
+
+.cardCta {
+  align-self: flex-start;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

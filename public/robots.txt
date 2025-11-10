@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://finbiz.adaniuniversity.edu/
+
+# Sitemaps
+Sitemap: https://finbiz.adaniuniversity.edu/sitemap.xml
