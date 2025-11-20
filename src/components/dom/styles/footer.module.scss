@@ -217,12 +217,15 @@
     height: 0;
     border-radius: 40vw;
     background-color: var(--fillColor);
+    opacity: 0;
     -webkit-transition:
-      width 0.6s cubic-bezier(0.4, 0, 0.1, 1),
-      height 0.6s cubic-bezier(0.4, 0, 0.1, 1);
+      width 0.9s cubic-bezier(0.4, 0, 0.1, 1),
+      height 0.9s cubic-bezier(0.4, 0, 0.1, 1),
+      opacity 0.9s cubic-bezier(0.4, 0, 0.1, 1);
     transition:
-      width 0.6s cubic-bezier(0.4, 0, 0.1, 1),
-      height 0.6s cubic-bezier(0.4, 0, 0.1, 1);
+      width 0.9s cubic-bezier(0.4, 0, 0.1, 1),
+      height 0.9s cubic-bezier(0.4, 0, 0.1, 1),
+      opacity 0.9s cubic-bezier(0.4, 0, 0.1, 1);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -230,12 +233,13 @@
 }
 .circleButton:hover {
   .ball {
-    width: 25vw;
-    height: 25vw;
+    width: 16vw;
+    height: 16vw;
+    opacity: 0.12;
     z-index: 1;
     @include mobile {
-      width: 80vw;
-      height: 80vw;
+      width: 60vw;
+      height: 60vw;
     }
   }
 }

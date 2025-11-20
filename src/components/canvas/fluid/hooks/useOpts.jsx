@@ -4,8 +4,8 @@ const useOpts = () => {
   const isMobile = window.innerWidth < 812;
   const OPTS = useMemo(
     () => ({
-      intensity: 5,
-      force: 1,
+      intensity: 3,
+      force: 0.35,
       curl: 1,
       radius: isMobile ? 0.11 : 0.14,
       swirl: 3,

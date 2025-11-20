@@ -26,7 +26,7 @@ function ButtonLink({ href, label, target = false }) {
 
     gsap.set(span, { top: `${relY}%`, left: `${relX}%` });
     gsap.to(span, {
-      duration: 0.6,
+      duration: 0.9,
       ease: 'cubic-bezier(.4,0,.1,1)',
     });
   }, []);
@@ -37,7 +37,7 @@ function ButtonLink({ href, label, target = false }) {
 
     const { relX, relY } = relsRef.current;
     gsap.to(span, {
-      duration: 0.6,
+      duration: 0.9,
       top: `${relY}%`,
       left: `${relX}%`,
       ease: 'cubic-bezier(.4,0,.1,1)',

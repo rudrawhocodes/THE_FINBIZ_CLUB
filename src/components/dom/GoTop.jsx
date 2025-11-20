@@ -38,7 +38,7 @@ function GoTop() {
       gsap.set(span, { top: `${relY}%`, left: `${relX}%` });
 
       gsap.to(span, {
-        duration: 0.6,
+        duration: 0.9,
         ease: 'cubic-bezier(.4,0,.1,1)',
       });
     });
@@ -50,7 +50,7 @@ function GoTop() {
 
     gsap.context(() => {
       gsap.to(span, {
-        duration: 0.6,
+        duration: 0.9,
         top: `${relY}%`,
         left: `${relX}%`,
         ease: 'cubic-bezier(.4,0,.1,1)',
